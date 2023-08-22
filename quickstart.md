@@ -33,18 +33,20 @@ https://gitlab.com/veilid/veilid
 
  Step 3: Select "Linode" from the drop-down menu.
  ![Linode is the first option provided.](image-2.png)
+ 
  You will end up here:
  ![This is the screen you will end up on.](image-3.png)
 
  Step 4: On the "Chose a Distribution" drop-down menu, pick "Debian 12". 
  ![Debian 12 is the 12th option from the top.](image-4.png)
+
  - Why? In my testing Debian 10 and 11 both tried to fight me and Fedora had outdated packages in it's repos for Veilid. For ease of install, Debian 12 is the way to go here. 
 
- Step 5: Select a Region. This really doesn't matter much so, pick something tropical? Pick your favorite city? Pick the funniest name? Eh. 
- ![I picked Atlanta, GA for no particular reason. Pick your favorite flag or something.](image-5.png)
+Step 5: Select a Region. This really doesn't matter much so, pick something tropical? Pick your favorite city? Pick the funniest name? Eh. 
+![I picked Atlanta, GA for no particular reason. Pick your favorite flag or something.](image-5.png)
 
- Step 6: Unless you want to spend the money for a nicer instance you're going to want to go with "Shared CPU"
- ![Click the second option under "Linode Plan"](image-6.png)
+Step 6: Unless you want to spend the money for a nicer instance you're going to want to go with "Shared CPU"
+![Click the second option under "Linode Plan"](image-6.png)
 
  Step 7: And then select "Nanode 1 GB" ($5 USD a month)
 ![Nanode 1 GB is the first option on the list](image-7.png)
@@ -69,6 +71,8 @@ Of course we can't actually add an SSH key until we generate one, and of course 
 
 Alright, so getting to generating these keys.
 
+-----------------------
+
 ### Linux Users Here
 Us Linux people (gnusers as I like to call us) have it easy. Just type the command ```ssh-keygen``` and you'll see something a bit like this (with less redactions): 
 ![This is command line with a bunch of redactions, for my sake.](image-12.png)
@@ -81,8 +85,12 @@ When done it will look a bit like this:
 Then click "Add Key" and feel good about using SSH keys. Don't forget to click the check button next to your username when you're done!
 ![The beautiful bright blue add key button, to the far right of the screen.](image-14.png)
 
+-----------------------
+
 ### Windows Users Here
 For all ya'll Windows users, you've got a bit more involved process. I am not a Windows user, but there is a wonderfully detailed guide here: https://www.ssh.com/academy/ssh/putty/windows/puttygen. In following this guide, once you get to the third screenshot you will see "Public key for pasting into OpenSSH authorized_keys file:" This is what you want to copy and paste. Alright, back to our regularly scheduled guide. 
+
+------------------------
 
 Step 11: Ignore all this other stuff. It will ask you if you want Add-ons, or a VLAN and nope, not for this guide, thanks. 
 ![Ignore all this stuff, it doesn't matter for this guide.](image-15.png)
@@ -94,6 +102,8 @@ Step 13: Now give it a minute to provision. Go to the bathroom or to get yoursel
 ![Wait till the text in the top left hand corner of the screen changes from "Provisioning" to "Running".](image-17.png)
 
 Step 14: Now that you've got a refill of your lovely beverage of choice and your Linode is ready to go we're going to connect to this Linode over SSH with SSH keys. This guide uses Remmina to create a connection profile so we can get away with remembering less stuff. Remmina is for Linux users only; all ya'll Windows people out there are going to have to use PuTTY. 
+
+-------------------------------
 
 ### All My Linux People Here
 Go ahead and open Remmina then click the little + on the top of the left corner of the window. 
@@ -122,8 +132,12 @@ Select the checkbox next to "SSH identity file" and then click the thing that lo
 
 Then click "Save and Connect" and you're in! You've just made and connected to a Linode!
 
+------------------------------
+
 ### For the Windows People
 As I said before, I don't use Windows but, this guide should help. https://devops.ionos.com/tutorials/use-ssh-keys-with-putty-on-windows/ . Now back to our normally scheduled guide.
+
+------------------------------
 
 Step 15: We're finally to go the good stuff, actually installing Veilid. The hard part is over, I promise. If you follow the install instructions from the official website, they'll give you a bit of grief because Linode does not have gnupg installed on debian by default for some reason. So we need to do that first. Run the following commands:
 
