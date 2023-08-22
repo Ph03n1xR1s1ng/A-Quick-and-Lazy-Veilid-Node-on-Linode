@@ -157,7 +157,8 @@ Step 16: Just like the website says, run the following command to add a GPG key 
 
 Step 17: Add the Veilid repos to apt with the following command. You will not get a response from the system once this is done and that's okay.:
 
-```echo "deb [arch=amd64 signed-by=/usr/share/keyrings/veilid-packages-keyring.gpg] https://packages.veilid.net/apt stable main" | sudo tee /etc/apt/sources.list.d/veilid.list 1>/dev/null
+```
+echo "deb [arch=amd64 signed-by=/usr/share/keyrings/veilid-packages-keyring.gpg] https://packages.veilid.net/apt stable main" | sudo tee /etc/apt/sources.list.d/veilid.list 1>/dev/null
 ``` 
 
 ![The results of adding the Veilid repos. ](image-29.png)
