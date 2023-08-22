@@ -98,7 +98,7 @@ Step 11: Ignore all this other stuff. It will ask you if you want Add-ons, or a 
 Step 12: Click the most satisifying button of all: "Create Linode"
 ![The best button on this screen. At the bottom right hand corner of the entire form.](image-16.png)
 
-Step 13: Now give it a minute to provision. Go to the bathroom or to get yourself a lovely cup of tea. This is usually pretty fast but, who doesn't need more tea? Once it's green you're good to SSH in. Just ingore the "Access" commands it gives you. We aren't about to use these anytime soon. We've got SSH keys. 
+Step 13: Now give it a minute to provision. Go to the bathroom or to get yourself a lovely cup of tea. This is usually pretty fast but, who doesn't need more tea? Once it's green you're good to SSH in. Just ignore the "Access" commands it gives you. We aren't about to use these anytime soon. We've got SSH keys. 
 ![Wait till the text in the top left hand corner of the screen changes from "Provisioning" to "Running".](image-17.png)
 
 Step 14: Now that you've got a refill of your lovely beverage of choice and your Linode is ready to go we're going to connect to this Linode over SSH with SSH keys. This guide uses Remmina to create a connection profile so we can get away with remembering less stuff. Remmina is for Linux users only; all ya'll Windows people out there are going to have to use PuTTY. 
