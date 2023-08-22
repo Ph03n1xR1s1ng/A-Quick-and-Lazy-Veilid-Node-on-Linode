@@ -109,9 +109,6 @@ Step 14: Now that you've got a refill of your lovely beverage of choice and your
 Go ahead and open Remmina then click the little + on the top of the left corner of the window. 
 ![Remmina when it first launches.](image-18.png)
 
-Then you will get this.
-![Remote Connection Profile "Execute a Command" window](image-19.png)
-
 Change the protocol to "SSH - Secure Shell"
 ![SSH - Secure Shell is the 4th option in the drop-down menu next to "Protocol" ](image-20.png)
 
